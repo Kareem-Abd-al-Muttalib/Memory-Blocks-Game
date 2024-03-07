@@ -1,0 +1,142 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --mainclr: #2196f3;
+    --secondaryclr: #1787e0;
+    --main-transition: .3s;
+    --secondary-bg: #ECECEC;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif, 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 0 1em;
+    margin: 0 auto;
+}
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+      }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: calc(100% - 1em);
+      }
+}
+@media (min-width: 769px) {
+    .container {
+        width: 750px;
+      }
+}
+@media (min-width: 993px) {
+    .container {
+        width: 970px;
+      }
+}
+@media (min-width: 1201px) {
+    .container {
+        width: 1170px;
+      }
+}
+main > *{
+  padding: 2.75rem 0;
+}
+/* Start */
+
+.control-start,
+.control-replay{
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(54, 169, 129, 0.5);
+    z-index: 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.control-start{
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(54, 169, 129, 0.5);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-replay p{
+    font-size: 3rem;
+    font-weight: bold;
+    animation: visibility 1s infinite alternate both;
+}
+.control-start > span,
+.control-replay span{
+    font-size: 3rem;
+    background-color: #683670;
+    padding: 1rem .5rem;
+    border-radius: calc(1rem - 2px);
+    cursor: pointer;
+}
+.control-replay{
+    display: none;
+}
+.info{
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #3c6662;
+}
+main{
+    display: grid;
+    gap:  1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.game-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+}
+.face{
+    transition: transform .5s;
+    backface-visibility: hidden;
+}
+.front{
+    color: rgb(0, 139, 60);
+}
+.back{
+    position: absolute;
+    transform: rotateY(180deg);
+    color: darkcyan;
+}
+/* JS */
+.prevent-click{
+    pointer-events: none;
+}
+@keyframes visibility {
+    0%, 100%{
+    color: #ab91c6;
+    }
+    50%{
+      color: transparent;
+    }
+  }
