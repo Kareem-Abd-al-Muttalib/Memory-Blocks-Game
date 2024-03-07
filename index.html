@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset stylesheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Font awesome library-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+    <div class="control-start">
+        <span>Start Game</span>
+    </div>
+    <div class="container">
+        <header class="info">
+            <p class="name">
+                Hello <span></span>
+            </p>
+            <p class="tries">
+                Wrong tries: <span>0</span>
+            </p>
+        </header>
+        <main id="blocks-Parent">
+            <div class="game-block" data-alpha="a">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-a"></i>
+            </div>
+            <div class="game-block" data-alpha="b">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-b"></i>
+            </div>
+            <div class="game-block" data-alpha="c">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-c"></i>
+            </div>
+            <div class="game-block" data-alpha="d">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-d"></i>
+            </div>
+            <div class="game-block" data-alpha="e">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-e"></i>
+            </div>
+            <div class="game-block" data-alpha="f">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-f"></i>
+            </div>
+            <div class="game-block" data-alpha="g">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-g"></i>
+            </div>
+            <div class="game-block" data-alpha="h">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-h"></i>
+            </div>
+            <div class="game-block" data-alpha="i">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-i"></i>
+            </div>
+            <div class="game-block" data-alpha="j">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-j"></i>
+            </div>
+            <div class="game-block" data-alpha="a">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-a"></i>
+            </div>
+            <div class="game-block" data-alpha="b">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-b"></i>
+            </div>
+            <div class="game-block" data-alpha="c">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-c"></i>
+            </div>
+            <div class="game-block" data-alpha="d">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-d"></i>
+            </div>
+            <div class="game-block" data-alpha="e">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-e"></i>
+            </div>
+            <div class="game-block" data-alpha="f">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-f"></i>
+            </div>
+            <div class="game-block" data-alpha="g">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-g"></i>
+            </div>
+            <div class="game-block" data-alpha="h">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-h"></i>
+            </div>
+            <div class="game-block" data-alpha="i">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-i"></i>
+            </div>
+            <div class="game-block" data-alpha="j">
+                <i class="fa-solid fa-clipboard-question fa-7x face front"></i>
+                <i class="fa-solid face back fa-7x fa-j"></i>
+            </div>
+        </main>
+    </div>
+    <div class="control-replay">
+        <p>Congratulations! You've won!</p> 
+        <br>
+        <span>Play again</span>
+    </div>
+    <audio src="audio/retry.wav" preload="auto" id="failureSound"></audio>
+    <audio src="audio/success.wav" preload="auto" id="successSound"></audio>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
